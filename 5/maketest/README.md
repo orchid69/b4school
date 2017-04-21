@@ -1,8 +1,8 @@
-#b4school Makefile
+#b4school Makefile  
 詳しくは[b4スクール資料](http://karafuto/b4school/network.pdf)を参照してください．[^mk]  
 
 
-##ファイルの依存関係
+##ファイルの依存関係  
 依存関係は以下の通り．
 ![dependence](./Figs/b4school.png)
 
