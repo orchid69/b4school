@@ -1,0 +1,17 @@
+CC = gcc
+OBJS = mat_cal.o q1.o
+
+main: $(OBJS)
+	$(CC) -o $@ $^
+
+mat_cal.o: mat_cal.c mat_cal.h
+	$(CC) -c $<
+
+q1.o: q1.c
+	$(CC) -c $<
+
+clean:
+	rm main
+	rm *.o
+	rm -f *~
+

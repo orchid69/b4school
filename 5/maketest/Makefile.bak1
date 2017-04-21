@@ -1,0 +1,14 @@
+main: mat_cal.o q1.o
+	gcc -o main mat_cal.o q1.o
+
+mat_cal.o: mat_cal.c mat_cal.h
+	gcc -c mat_cal.c
+
+q1.o: q1.c
+	gcc -c q1.c
+
+clean:
+	rm main
+	rm *.o
+	rm -f *~
+

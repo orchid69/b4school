@@ -1,0 +1,16 @@
+CC = gcc
+OBJS = mat_cal.o q1.o
+
+.SUFFIXES: .c .o
+
+main: $(OBJS)
+	$(CC) -o $@ $^
+
+.c.o:
+	$(CC) -c $<
+
+mat_cal.o: mat_cal.h
+
+clean:
+	rm *.o
+	rm -f *~
